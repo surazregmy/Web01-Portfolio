@@ -11,4 +11,15 @@
   background: rgb(223, 214, 213);
   font-size: 16px;
   text-align: center;
+  padding: 10px;
+}
+
+.imagePara {
+  background: rgb(223, 214, 213);
+  font-size: 16px;
+  padding: 10px;
+}
+
+.description {
+  font-size: 16px;
 }
