@@ -1,0 +1,31 @@
+<% include partials/header.ejs %>
+<div class="container">
+  <form action="/savecontact" method="POST">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Full Name</label>
+      <input
+        type="text"
+        class="form-control"
+        name="name"
+        placeholder="Enter your name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        name="email"
+        aria-describedby="emailHelp"
+        placeholder="Enter email"
+      />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Message</label>
+      <textarea class="form-control" name="message" rows="3"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<% include partials/footer.ejs %>
