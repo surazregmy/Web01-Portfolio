@@ -30,9 +30,7 @@ router.get("/contactme", function (req, res, next) {
 });
 
 /* save info for contact form. */
-router.get("/savecontact", function (req, res, next) {
-  //display form value
-  res.render("thanks.ejs", { body: req.body });
+router.post("/savecontact", function (req, res, next) {
   return res.redirect("/");
 });
 
