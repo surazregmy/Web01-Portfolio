@@ -1,80 +1,14 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>
-    <%= title %>
-  </title>
-  <link rel="stylesheet" href="/stylesheets/style.css" />
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous" />
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
-    integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous" />
-</head>
-
-<body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">
-          <img src="/images/surajregmi.png" width="40" height="40" class="d-inline-block align-top" alt="">
-        </a>
-        <a class="navbar-brand" href="#">Suraj Regmi</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Contact Me</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Services</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Projects</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">About Me</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Home</a></li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
-
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h3 style="text-align: center;">Welcome to Suraj Regmi's Profile</h3>
-      </div>
-    </div>
-      <div class="container bodyPara">
-       Graduated in Computer Science from Deerwalk Institute of Technology in 2017, I have been involved in many projects in 
-       many companies. My main programming langauge is Java, But I am quite comfortable with javascript, python and react. My 
-       mission is to be good at programming and explore different interesting fields like machine learning, robotics etc.
-    </div>
-  </body>
-
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-    crossorigin="anonymous"></script>
-</body>
-<!-- Latest compiled and minified JavaScript -->
-<footer>
-  <div id="footer">
-    <div class="container">
-      <p class="muted credit">
-        created by <a href="https://www.linkedin.com/in/suraj-regmi-156159148/">Suraj Regmi
-      </p>
-    </div>
+<% include partials/header.ejs %>
+<div class="container">
+  <div class="jumbotron">
+    <h3 style="text-align: center">Welcome to Suraj Regmi's Profile</h3>
   </div>
-</footer>
-
-</html>
+</div>
+<div class="container bodyPara">
+  Graduated in Computer Science from Deerwalk Institute of Technology in 2017, I
+  have been involved in many projects in many companies. My main programming
+  langauge is Java, But I am quite comfortable with javascript, python and
+  react. My mission is to be good at programming and explore different
+  interesting fields like machine learning, robotics etc.
+</div>
+<% include partials/footer.ejs %>
