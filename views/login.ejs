@@ -1,0 +1,42 @@
+<% include partials/header.ejs %>
+
+<!-- login form -->
+<section>
+  <div class="signin_form container">
+    <div class="col-md-5">
+      <form action="/authenticate" method="POST">
+        <!-- Email input -->
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form1Example13">Username</label>
+          <input
+            id="form1Example13"
+            class="form-control form-control-lg"
+            name="username"
+          />
+        </div>
+
+        <!-- Password input -->
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form1Example23">Password</label>
+          <input
+            type="password"
+            id="form1Example23"
+            class="form-control form-control-lg"
+            name="password"
+          />
+        </div>
+
+        <div style="padding-top: 10px">
+          <button type="submit" class="btn signin-btn btn-lg btn-block">
+            Sign in
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- login form -->
+<% include partials/footer.ejs %>

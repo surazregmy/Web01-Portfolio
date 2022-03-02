@@ -27,3 +27,15 @@ student Id : 301217943
 .description {
   font-size: 16px;
 }
+.signin_form {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.signin-btn {
+  background-color: rgb(221, 147, 142);
+  color: white;
+  font-weight: 40px;
+  padding-top: 10px;
+}

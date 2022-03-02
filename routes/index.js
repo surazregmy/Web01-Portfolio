@@ -34,4 +34,13 @@ router.post("/savecontact", function (req, res, next) {
   return res.redirect("/");
 });
 
+router.get("/login", function (req, res, next) {
+  res.render("login", { title: "Please login!" });
+});
+
+router.post("/authenticate", function (req, res, next) {
+  console.log(req.body.username);
+  console.log(req.body.password);
+});
+
 module.exports = router;
