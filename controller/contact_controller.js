@@ -53,7 +53,6 @@ module.exports.contactUpdate = function (req, res, next) {
 
 // Get a contact to edit and display it in contact page
 module.exports.contactDelete = function (req, res, next) {
-  console.log(req.body);
   Contact.deleteOne(
     {
       _id: req.params.id,
