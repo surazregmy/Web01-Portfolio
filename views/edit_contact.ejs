@@ -1,0 +1,76 @@
+<% include partials/header.ejs %>
+
+<!-- login form -->
+<section>
+  <div class="signin_form container">
+    <div class="col-md-5">
+      <form action="/contact-list/edit" method="POST">
+        <input type="hidden" name="id" value="<%= contact._id %>" />
+        <!-- Name input -->
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form1Example13">Name</label>
+          <input
+            id="form1Example13"
+            class="form-control form-control-lg"
+            name="name"
+            value="<%= contact.name %>"
+          />
+        </div>
+
+        <!-- Contact input -->
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form1Example23">Contact Number</label>
+          <input
+            type="text"
+            id="form1Example23"
+            class="form-control form-control-lg"
+            name="number"
+            value="<%= contact.number %>"
+          />
+        </div>
+
+        <!-- Email input -->
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form1Example23">Email</label>
+          <input
+            type="text"
+            id="form1Example33"
+            class="form-control form-control-lg"
+            name="email"
+            value="<%= contact.email %>"
+          />
+        </div>
+        <div style="padding-top: 10px">
+          <button type="submit" class="btn btn-primary btn-lg">Update</button>
+        </div>
+        <div class="button_group" style="padding-top: 20px">
+          <a
+            href="/contact-list/delete/<%= contact._id%>"
+            class="btn btn-primary btn-md btn-danger"
+            style="float: left"
+          >
+            <div class="button_group_inner" style="padding-top: 10px">
+              Delete
+            </div>
+          </a>
+          <a
+            href="/contact-list"
+            class="btn btn-primary btn-md btn-info"
+            style="float: right"
+          >
+            <div class="button_group_inner" style="padding-top: 10px">
+              Cancel
+            </div>
+          </a>
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- login form -->
+<% include partials/footer.ejs %>

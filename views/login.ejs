@@ -4,7 +4,7 @@
 <section>
   <div class="signin_form container">
     <div class="col-md-5">
-      <form action="/authenticate" method="POST">
+      <form action="/login" method="POST">
         <!-- Email input -->
 
         <div class="form-outline mb-4">
@@ -26,6 +26,10 @@
             class="form-control form-control-lg"
             name="password"
           />
+        </div>
+
+        <div style="color: red; text-align: center">
+          <% if (message) { %> <%= message %> <% } %>
         </div>
 
         <div style="padding-top: 10px">

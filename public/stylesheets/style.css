@@ -39,3 +39,10 @@ student Id : 301217943
   font-weight: 40px;
   padding-top: 10px;
 }
+.button_group {
+  width: 100%;
+  text-align: center;
+}
+.button_group_inner {
+  display: inline-block;
+}

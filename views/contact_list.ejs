@@ -1,0 +1,48 @@
+<% include partials/header.ejs %>
+<div class="container">
+  <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading" style="text-align: center; font-weight: bold">
+      Available Contacts
+    </div>
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Contact Name</th>
+          <th scope="col">Contact Number</th>
+          <th scope="col">Email Address</th>
+          <th scope="col">Edit</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(let count = 0; count < contacts.length; count++) { %>
+        <tr>
+          <th scope="row"><%= count + 1 %></th>
+          <td><%=contacts[count].name %></td>
+          <td><%=contacts[count].number %></td>
+          <td><%=contacts[count].email %></td>
+          <td>
+            <a
+              href="/contact-list/edit/<%=contacts[count]._id%>"
+              class="btn btn-primary btn-sm"
+            >
+              <span class="glyphicon glyphicon-pencil"></span
+            ></a>
+          </td>
+          <td>
+            <a
+              href="/contact-list/delete/<%=contacts[count]._id%>"
+              class="btn btn-danger btn-sm"
+            >
+              <span class="glyphicon glyphicon-trash"></span
+            ></a>
+          </td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
+</div>
+<% include partials/footer.ejs %>
